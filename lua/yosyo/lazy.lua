@@ -38,6 +38,7 @@ require('lazy').setup({
 	{ 'kylechui/nvim-surround', version = "*", event = "VeryLazy" },
 	{ 'nvimdev/dashboard-nvim', event = 'VimEnter', dependencies = { {'nvim-tree/nvim-web-devicons'}} },
 	'lewis6991/gitsigns.nvim',
+	'elkowar/yuck.vim',
 
 	-- 42 specific plugins
 	'Diogo-ss/42-header.nvim',
