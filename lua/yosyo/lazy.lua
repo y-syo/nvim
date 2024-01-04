@@ -35,10 +35,11 @@ require('lazy').setup({
 	{ 'nvim-telescope/telescope.nvim', tag = '0.1.5', dependencies = { 'nvim-lua/plenary.nvim' } },
 	{ 'stevearc/dressing.nvim', event = "VeryLazy" },
 	{ '2kabhishek/nerdy.nvim', dependencies = { 'stevearc/dressing.nvim', 'nvim-telescope/telescope.nvim', }, lazy = true, cmd = 'Nerdy', },
-	{ "kylechui/nvim-surround", version = "*", event = "VeryLazy", config = function() require("nvim-surround").setup({}) end },
-	"lewis6991/gitsigns.nvim",
+	{ 'kylechui/nvim-surround', version = "*", event = "VeryLazy" },
+	{ 'nvimdev/dashboard-nvim', event = 'VimEnter', dependencies = { {'nvim-tree/nvim-web-devicons'}} },
+	'lewis6991/gitsigns.nvim',
 
 	-- 42 specific plugins
-	"Diogo-ss/42-header.nvim",
-	{ "hardyrafael17/norminette42.nvim", config = function() local norminette = require("norminette") norminette.setup({ runOnSave = true, maxErrorsToShow = 10, active = true, }) end },
+	'Diogo-ss/42-header.nvim',
+	{ 'hardyrafael17/norminette42.nvim', config = function() local norminette = require("norminette") norminette.setup({ runOnSave = true, maxErrorsToShow = 10, active = true, }) end },
 })

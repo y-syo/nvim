@@ -30,3 +30,5 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 vim.cmd([[highlight SignColumn ctermbg=None]])
+
+vim.cmd([[autocmd VimLeave * mksession! ~/.vim_session]])
