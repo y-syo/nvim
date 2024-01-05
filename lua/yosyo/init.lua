@@ -12,6 +12,13 @@
 
 require('yosyo.lazy')
 
+-- disable netrw (for nvim-tree)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- set termguicolors to enable highlight groups
+-- vim.opt.termguicolors = true
+
 -- enable mouse support
 vim.o.mouse = 'a'
 

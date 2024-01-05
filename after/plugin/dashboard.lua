@@ -6,7 +6,7 @@
 --   By: mmoussou <mmoussou@student.42angouleme.fr  +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2024/01/03 22:45:48 by mmoussou          #+#    #+#             --
---   Updated: 2024/01/04 01:44:47 by mmoussou         ###   ########.fr       --
+--   Updated: 2024/01/05 23:54:45 by mmoussou         ###   ########.fr       --
 --                                                                            --
 -- ************************************************************************** --
 
@@ -37,9 +37,27 @@ require('dashboard').setup({
 				action = 'source ~/.vim_session'
 			},
 			{
-				icon = ' ',
+				icon = ' ',
 				icon_hl = 'String',
-				desc = 'New File',
+				desc = 'Recents files',
+				key = 'l',
+				key_hl = 'String',
+				key_format = ' %s',
+				action = 'Telescope oldfiles'
+			},
+			{
+				icon = '󰊢 ',
+				icon_hl = 'String',
+				desc = 'Search in git repo',
+				key = 'f',
+				key_hl = 'String',
+				key_format = ' %s',
+				action = ':Telescope git_files'
+			},
+			{
+				icon = ' ',
+				icon_hl = 'String',
+				desc = 'New file',
 				key = 'n',
 				key_hl = 'String',
 				key_format = ' %s',

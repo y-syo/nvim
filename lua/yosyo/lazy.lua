@@ -36,7 +36,8 @@ require('lazy').setup({
 	{ 'stevearc/dressing.nvim', event = "VeryLazy" },
 	{ '2kabhishek/nerdy.nvim', dependencies = { 'stevearc/dressing.nvim', 'nvim-telescope/telescope.nvim', }, lazy = true, cmd = 'Nerdy', },
 	{ 'kylechui/nvim-surround', version = "*", event = "VeryLazy" },
-	{ 'nvimdev/dashboard-nvim', event = 'VimEnter', dependencies = { {'nvim-tree/nvim-web-devicons'}} },
+	{ 'nvimdev/dashboard-nvim', event = 'VimEnter', dependencies = { 'nvim-tree/nvim-web-devicons' } },
+	{ 'nvim-tree/nvim-tree.lua', dependencies = { 'nvim-tree/nvim-tree.lua' } },
 	'lewis6991/gitsigns.nvim',
 	'elkowar/yuck.vim',
 
