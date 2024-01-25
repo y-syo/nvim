@@ -38,10 +38,11 @@ require('lazy').setup({
 	{ 'kylechui/nvim-surround', version = "*", event = "VeryLazy" },
 	{ 'nvimdev/dashboard-nvim', event = 'VimEnter', dependencies = { 'nvim-tree/nvim-web-devicons' } },
 	{ 'nvim-tree/nvim-tree.lua', dependencies = { 'nvim-tree/nvim-tree.lua' } },
-	'lewis6991/gitsigns.nvim',
-	'elkowar/yuck.vim',
+	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+	{'elkowar/yuck.vim', lazy = true},
+	{ "ellisonleao/gruvbox.nvim", priority = 1000 , config = true },
 
 	-- 42 specific plugins
-	'Diogo-ss/42-header.nvim',
-	{ 'hardyrafael17/norminette42.nvim', config = function() local norminette = require("norminette") norminette.setup({ runOnSave = true, maxErrorsToShow = 10, active = true, }) end },
+	{'Diogo-ss/42-header.nvim', lazy = true},
+	{ 'hardyrafael17/norminette42.nvim', event = "VeryLazy", enabled = true, config = function() local norminette = require("norminette") norminette.setup({ runOnSave = true, maxErrorsToShow = 10, active = true, }) end },
 })

@@ -12,12 +12,16 @@
 
 require('yosyo.lazy')
 
+vim.o.background = "dark"
+vim.cmd [[colorscheme gruvbox]]
+
 -- disable netrw (for nvim-tree)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- set termguicolors to enable highlight groups
 -- vim.opt.termguicolors = true
+vim.o.termguicolors = true
 
 -- enable mouse support
 vim.o.mouse = 'a'
