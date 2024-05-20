@@ -13,7 +13,7 @@
 require('yosyo.lazy')
 
 vim.o.background = "dark"
-vim.cmd [[colorscheme gruvbox]]
+vim.cmd [[colorscheme ayu]]
 
 -- disable netrw (for nvim-tree)
 vim.g.loaded_netrw = 1

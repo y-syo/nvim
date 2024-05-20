@@ -40,7 +40,7 @@ require('lazy').setup({
 	{ 'nvim-tree/nvim-tree.lua', dependencies = { 'nvim-tree/nvim-tree.lua' } },
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 	{'elkowar/yuck.vim', lazy = true},
-	{ "ellisonleao/gruvbox.nvim", priority = 1000 , config = true },
+	{ "Shatur/neovim-ayu", priority = 1000 },
 
 	-- 42 specific plugins
 	{'Diogo-ss/42-header.nvim', lazy = true},

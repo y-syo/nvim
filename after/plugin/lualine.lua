@@ -6,7 +6,7 @@
 --   By: mmoussou <mmoussou@student.42angouleme.fr  +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2024/01/03 19:46:13 by mmoussou          #+#    #+#             --
---   Updated: 2024/01/03 20:39:56 by mmoussou         ###   ########.fr       --
+--   Updated: 2024/05/20 02:50:57 by mmoussou         ###   ########.fr       --
 --                                                                            --
 -- ************************************************************************** --
 
@@ -29,42 +29,10 @@ local colors = {
   inactivegray = '#7c6f64',
 }
 
-local gruvbox_sy = {
-	normal = {
-		a = { bg = colors.purple, fg = colors.black, gui = 'bold' },
-		b = { bg = colors.gray, fg = colors.lightgray },
-		c = { bg = colors.darkgray, fg = colors.lightgray },
-	},
-	insert = {
-		a = { bg = colors.red, fg = colors.black, gui = 'bold' },
-		b = { bg = colors.gray, fg = colors.lightgray },
-		c = { bg = colors.darkgray, fg = colors.lightgray },
-	},
-	visual = {
-		a = { bg = '#00FF00', fg = colors.black, gui = 'bold' },
-		b = { bg = colors.gray, fg = colors.lightgray },
-		c = { bg = colors.darkgray, fg = colors.lightgray },
-	},
-	replace = {
-		a = { bg = colors.green, fg = colors.black, gui = 'bold' },
-		b = { bg = colors.gray, fg = colors.lightgray },
-		c = { bg = colors.darkgray, fg = colors.lightgray },
-	},
-	command = {
-		a = { bg = colors.yellow, fg = colors.black, gui = 'bold' },
-		b = { bg = colors.gray, fg = colors.lightgray },
-		c = { bg = colors.darkgray, fg = colors.lightgray },
-	},
-	inactive = {
-		a = { bg = colors.darkgray, fg = colors.black, gui = 'bold' },
-		b = { bg = colors.gray, fg = colors.lightgray },
-		c = { bg = colors.darkgray, fg = colors.lightgray },
-	},}
-
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = gruvbox_sy,
+    theme = 'ayu',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {
