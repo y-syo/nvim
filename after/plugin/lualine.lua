@@ -6,7 +6,7 @@
 --   By: mmoussou <mmoussou@student.42angouleme.fr  +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2024/01/03 19:46:13 by mmoussou          #+#    #+#             --
---   Updated: 2024/05/20 02:50:57 by mmoussou         ###   ########.fr       --
+--   Updated: 2024/05/20 23:26:38 by mmoussou         ###   ########.fr       --
 --                                                                            --
 -- ************************************************************************** --
 
@@ -32,7 +32,7 @@ local colors = {
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'ayu',
+    theme = 'ayu_mirage',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {
