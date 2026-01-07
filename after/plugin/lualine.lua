@@ -6,35 +6,22 @@
 --   By: mmoussou <mmoussou@student.42angouleme.fr  +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2024/01/03 19:46:13 by mmoussou          #+#    #+#             --
---   Updated: 2024/05/20 23:26:38 by mmoussou         ###   ########.fr       --
+--   Updated: 2026/01/07 14:02:52 by mmoussou         ###   ########.fr       --
 --                                                                            --
 -- ************************************************************************** --
 
 local function user()
-  return [[yosyo@seekrs]]
+  return [[yosyo@castletown]]
 end
-
-local colors = {
-  black        = '#282828',
-  white        = '#ebdbb2',
-  red          = '#cc241d',
-  green        = '#98971a',
-  yellow       = '#d79921',
-  blue         = '#458688',
-  purple       = '#b16286',
-  orange       = '#d65d0e',
-  gray         = '#504945',
-  darkgray     = '#3c3836',
-  lightgray    = '#928374',
-  inactivegray = '#7c6f64',
-}
 
 require('lualine').setup {
   options = {
     icons_enabled = true,
     theme = 'ayu_mirage',
-    component_separators = { left = '', right = ''},
-    section_separators = { left = '', right = ''},
+    -- component_separators = { left = '', right = ''},
+	component_separators = { left = '|', right = '|'},
+    -- section_separators = { left = '', right = ''},
+    section_separators = { left = '|', right = '|'},
     disabled_filetypes = {
       statusline = {},
       winbar = {},

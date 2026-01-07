@@ -6,7 +6,7 @@
 --   By: mmoussou <mmoussou@student.42angouleme.fr  +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2024/01/03 22:45:48 by mmoussou          #+#    #+#             --
---   Updated: 2024/01/05 23:54:45 by mmoussou         ###   ########.fr       --
+--   Updated: 2026/01/07 13:20:13 by mmoussou         ###   ########.fr       --
 --                                                                            --
 -- ************************************************************************** --
 
@@ -82,6 +82,6 @@ require('dashboard').setup({
 				action = 'qa'
 			},
 		},
-		footer = { '', '', '', '', "Seekers mindset : fuck around and find out", '', '', '', '', '', '', '', '', '', '', '', '', '', '', '' },
+		footer = { '', '', '', '', "just do things, you'll be fine <3", '', '', '', '', '', '', '', '', '', '', '', '', '', '', '' },
 	}
 })

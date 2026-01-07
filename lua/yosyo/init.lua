@@ -13,7 +13,8 @@
 require('yosyo.lazy')
 
 vim.o.background = "dark"
-vim.cmd [[colorscheme ayu]]
+-- vim.cmd [[colorscheme ayu]]
+require('ayu').colorscheme()
 
 -- disable netrw (for nvim-tree)
 vim.g.loaded_netrw = 1
@@ -27,8 +28,10 @@ vim.o.termguicolors = true
 vim.o.mouse = 'a'
 
 -- line numbers
-vim.opt.nu = true
-vim.opt.relativenumber = true
+vim.o.nu = true
+vim.o.relativenumber = true
+vim.o.cursorline = true
+vim.o.cursorlineopt = 'both'
 
 -- indentation
 vim.opt.tabstop = 4
