@@ -6,7 +6,7 @@
 --   By: mmoussou <mmoussou@student.42angouleme.fr  +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2024/05/20 02:49:08 by mmoussou          #+#    #+#             --
---   Updated: 2026/01/07 13:53:12 by mmoussou         ###   ########.fr       --
+--   Updated: 2026/01/07 16:07:24 by mmoussou         ###   ########.fr       --
 --                                                                            --
 -- ************************************************************************** --
 
@@ -15,7 +15,7 @@ colors.generate('true') -- Pass `true` to enable mirage
 
 require('ayu').setup({
     mirage = true,
-    terminal = true,
+	terminal = false,
     overrides = {
         Normal = { bg = "None" },
         ColorColumn = { bg = "None" },
@@ -25,8 +25,8 @@ require('ayu').setup({
         CursorLine = { bg = "None" },
         CursorColumn = { bg = "None" },
         WhichKeyFloat = { bg = "None" },
-        VertSplit = { bg = "None"},
+        VertSplit = { bg = "None" },
         LineNr = { bg = "None", fg = colors.gutter_active },
-        CursorLineNr = { bg = "None", fg = colors.accent },
+        CursorLineNr = { fg = colors.accent, bold = true },
     },
 })

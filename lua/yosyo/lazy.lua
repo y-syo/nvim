@@ -32,13 +32,13 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
 	{ 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
-	{ 'nvim-telescope/telescope.nvim', tag = '0.1.5', dependencies = { 'nvim-lua/plenary.nvim' } },
+	{ 'nvim-telescope/telescope.nvim', dependencies = { 'nvim-lua/plenary.nvim', { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' } } },
 	{ 'stevearc/dressing.nvim', event = "VeryLazy" },
 	{ '2kabhishek/nerdy.nvim', dependencies = { 'stevearc/dressing.nvim', 'nvim-telescope/telescope.nvim', }, lazy = true, cmd = 'Nerdy', },
 	{ 'kylechui/nvim-surround', version = "*", event = "VeryLazy" },
 	{ 'nvimdev/dashboard-nvim', event = 'VimEnter', dependencies = { 'nvim-tree/nvim-web-devicons' } },
 	{ 'nvim-tree/nvim-tree.lua', dependencies = { 'nvim-tree/nvim-tree.lua' } },
-	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+	{ "nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate"},
 	{ 'elkowar/yuck.vim', lazy = true},
 	{ "Shatur/neovim-ayu", priority = 1000 },
 	{ 'HiPhish/rainbow-delimiters.nvim' },

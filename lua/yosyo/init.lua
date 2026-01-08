@@ -29,9 +29,21 @@ vim.o.mouse = 'a'
 
 -- line numbers
 vim.o.nu = true
+-- vim.o.statuscolumn = "%=%{v:relnum == 0 and v:lnum or v:relnum}  "
 vim.o.relativenumber = true
 vim.o.cursorline = true
 vim.o.cursorlineopt = 'both'
+
+function StatusColumn()
+	local is_current = vim.v.lnum == vim.fn.line(".")
+	if is_current then
+		return "%#CursorLineNr#%l%#LineNr#▐ "
+		-- return "%#CursorLineNr#%l%#LineNr#▐ "
+	end
+	return "%-4l ▐ "
+end
+
+vim.opt.statuscolumn = "%{%v:lua.StatusColumn()%}"
 
 -- indentation
 vim.opt.tabstop = 4
@@ -42,7 +54,5 @@ vim.opt.smartindent = true
 -- Case-insensitive searching UNLESS \C or capital in search
 vim.o.ignorecase = true
 vim.o.smartcase = true
-
-vim.cmd([[highlight SignColumn ctermbg=None]])
 
 vim.cmd([[autocmd VimLeave * mksession! ~/.vim_session]])

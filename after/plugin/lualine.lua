@@ -6,22 +6,20 @@
 --   By: mmoussou <mmoussou@student.42angouleme.fr  +#+  +:+       +#+        --
 --                                                +#+#+#+#+#+   +#+           --
 --   Created: 2024/01/03 19:46:13 by mmoussou          #+#    #+#             --
---   Updated: 2026/01/07 14:02:52 by mmoussou         ###   ########.fr       --
+--   Updated: 2026/01/07 16:27:28 by mmoussou         ###   ########.fr       --
 --                                                                            --
 -- ************************************************************************** --
 
 local function user()
-  return [[yosyo@castletown]]
+  return [[yosyo@nurture]]
 end
 
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'ayu_mirage',
-    -- component_separators = { left = '', right = ''},
-	component_separators = { left = '|', right = '|'},
-    -- section_separators = { left = '', right = ''},
-    section_separators = { left = '|', right = '|'},
+    theme = "ayu_mirage",
+    component_separators = { left = '', right = ''},
+    section_separators = { left = '', right = ''},
     disabled_filetypes = {
       statusline = {},
       winbar = {},
